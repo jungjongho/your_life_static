@@ -8,7 +8,6 @@
 - Docker Compose 설치됨
 - Git 설치됨
 - 포트 3050, 8050, 5432가 사용 가능해야 함 (변경 가능)
-- 프로덕션 Nginx 사용 시: 포트 80, 443도 필요
 
 ## 초기 설정
 
@@ -81,15 +80,6 @@ make up
 
 # 또는
 docker-compose up -d
-```
-
-### Nginx 리버스 프록시와 함께 실행 (선택사항)
-
-```bash
-make prod
-
-# 또는
-docker-compose --profile production up -d
 ```
 
 ## 유용한 명령어
@@ -171,14 +161,14 @@ curl http://localhost:3050
     <array>
         <string>/usr/local/bin/docker-compose</string>
         <string>-f</string>
-        <string>/Users/mac/Desktop/jongho_project/your_life_static/docker-compose.yml</string>
+        <string>/Users/jonghojung/Desktop/home_server/your_life_static/docker-compose.yml</string>
         <string>up</string>
         <string>-d</string>
     </array>
     <key>RunAtLoad</key>
     <true/>
     <key>WorkingDirectory</key>
-    <string>/Users/mac/Desktop/jongho_project/your_life_static</string>
+    <string>/Users/jonghojung/Desktop/home_server/your_life_static</string>
 </dict>
 </plist>
 ```
@@ -200,14 +190,6 @@ http://<맥미니-IP>:3050
 ifconfig | grep "inet " | grep -v 127.0.0.1
 ```
 
-### 외부 접근 설정 (선택사항)
-
-공유기 포트포워딩 설정:
-- 80 → 맥미니:80 (HTTP)
-- 443 → 맥미니:443 (HTTPS)
-- 3050 → 맥미니:3050 (Frontend)
-- 8050 → 맥미니:8050 (Backend API)
-
 ## 문제 해결
 
 ### 포트 충돌
@@ -221,8 +203,8 @@ lsof -i :5432
 # docker-compose.yml에서 포트 변경
 # 예: 다른 프로젝트와 충돌 시
 # ports:
-#   - "3051:3000"  # 호스트:컨테이너
-#   - "8051:8000"  # 호스트:컨테이너
+#   - "3051:3050"  # 호스트:컨테이너
+#   - "8051:8050"  # 호스트:컨테이너
 ```
 
 ### DB 연결 실패
@@ -305,7 +287,7 @@ make restart
 crontab -e
 
 # 매일 새벽 3시에 DB 백업
-0 3 * * * cd /Users/mac/Desktop/jongho_project/your_life_static && make db-backup
+0 3 * * * cd /Users/jonghojung/Desktop/home_server/your_life_static && make db-backup
 ```
 
 ### 전체 데이터 백업
@@ -330,7 +312,7 @@ docker run --rm -v your_life_static_postgres_data:/data -v $(pwd):/backup alpine
    docker-compose up -d
    ```
 
-4. SSL/TLS 인증서 설정 (Let's Encrypt 권장)
+4. SSL/TLS 인증서 설정 (Cloudflare Tunnel 권장)
 
 ## 성능 최적화
 

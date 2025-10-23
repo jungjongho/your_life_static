@@ -1,0 +1,29 @@
+version: '3.8'
+
+# 통합 Nginx 전용 Docker Compose
+# 모든 서비스의 프론트도어 역할
+
+services:
+  nginx:
+    image: nginx:alpine
+    container_name: alldatabox_nginx
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx-unified.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+    network_mode: "host"
+    depends_on:
+      - dummy
+    
+  # 더미 서비스 (depends_on을 위한 placeholder)
+  dummy:
+    image: alpine:latest
+    command: "true"
+    container_name: alldatabox_dummy
+
+networks:
+  default:
+    name: alldatabox_network

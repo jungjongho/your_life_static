@@ -1,0 +1,106 @@
+{
+  "metadata": {
+    "title": "우리의 기념일 - 커플 기념일 계산기",
+    "description": "특별한 날짜를 입력하고 함께한 시간과 다가올 기념일을 확인하세요",
+    "keywords": "커플기념일, 100일, 200일, 1000일, 기념일계산기, 디데이"
+  },
+  "hero": {
+    "title": "우리의 기념일",
+    "subtitle": "함께한 시간과 다가올 특별한 날을 확인하세요"
+  },
+  "form": {
+    "title": "특별한 날짜 입력",
+    "year": "년",
+    "month": "월",
+    "day": "일",
+    "calculateButton": "기념일 보기",
+    "calculating": "계산 중...",
+    "privacyNote": "🔒 입력하신 정보는 저장되지 않습니다"
+  },
+  "stats": {
+    "title": "우리의 기념일 통계",
+    "daysLived": "함께한 날",
+    "hoursLived": "함께한 시간",
+    "minutesLived": "함께한 분",
+    "secondsLived": "함께한 초",
+    "heartbeats": "심장 박동",
+    "breaths": "호흡 횟수",
+    "sleepHours": "함께 잠든 시간",
+    "mealsEaten": "함께한 식사",
+    "daysUntilBirthday": "1년 기념일까지",
+    "nextMilestone": "다음 만일까지 남은 날",
+    "milestone100": "100일 기념일까지",
+    "milestone200": "200일 기념일까지",
+    "milestone500": "500일 기념일까지",
+    "milestone1000": "1000일 기념일까지",
+    "milestone5years": "5주년까지",
+    "downloadButton": "이미지로 저장",
+    "shareButton": "URL 공유",
+    "resetButton": "다시 계산하기"
+  },
+  "viewCounter": {
+    "totalViews": "총 방문",
+    "totalCalculations": "계산 횟수"
+  },
+  "toast": {
+    "enterAllFields": "날짜를 모두 입력해주세요.",
+    "invalidDate": "유효하지 않은 날짜입니다.",
+    "imageDownloaded": "이미지가 다운로드되었습니다!",
+    "imageDownloadFailed": "이미지 다운로드에 실패했습니다.",
+    "urlCopied": "URL이 클립보드에 복사되었습니다!",
+    "urlCopyFailed": "URL 복사에 실패했습니다."
+  },
+  "footer": {
+    "copyright": "© 2025 우리의 기념일. 이 서비스는 참고 및 재미 목적입니다."
+  },
+  "compatibility": {
+    "metadata": {
+      "title": "커플 사주 궁합 - 우리는 잘 맞을까?",
+      "description": "두 사람의 생년월일로 사주 궁합을 확인해보세요",
+      "keywords": "사주궁합, 커플궁합, 생년월일, 띠궁합, 오행"
+    },
+    "hero": {
+      "title": "커플 사주 궁합",
+      "subtitle": "두 사람의 궁합을 확인해보세요"
+    },
+    "form": {
+      "person1Title": "첫 번째 사람",
+      "person2Title": "두 번째 사람",
+      "year": "년",
+      "month": "월",
+      "day": "일",
+      "hour": "시 (선택)",
+      "hourPlaceholder": "시간",
+      "gender": "성별 (선택)",
+      "genderMale": "남성",
+      "genderFemale": "여성",
+      "name": "이름 (선택)",
+      "namePlaceholder": "별명",
+      "analyzeButton": "궁합 보기",
+      "analyzing": "분석 중...",
+      "privacyNote": "🔒 입력하신 정보는 저장되지 않습니다"
+    },
+    "result": {
+      "title": "궁합 분석 결과",
+      "score": "궁합 점수",
+      "summary": "전체 요약",
+      "strengths": "강점",
+      "cautions": "주의할 점",
+      "elementsAnalysis": "오행 분석",
+      "zodiacCompatibility": "띠 궁합",
+      "advice": "조언",
+      "downloadButton": "이미지로 저장",
+      "shareButton": "URL 공유",
+      "resetButton": "다시 분석하기"
+    },
+    "toast": {
+      "enterAllFields": "생년월일을 모두 입력해주세요.",
+      "invalidDate": "유효하지 않은 날짜입니다.",
+      "analysisFailed": "분석에 실패했습니다. 다시 시도해주세요.",
+      "imageDownloaded": "이미지가 다운로드되었습니다!",
+      "imageDownloadFailed": "이미지 다운로드에 실패했습니다.",
+      "urlCopied": "URL이 클립보드에 복사되었습니다!",
+      "urlCopyFailed": "URL 복사에 실패했습니다."
+    }
+  }
+}

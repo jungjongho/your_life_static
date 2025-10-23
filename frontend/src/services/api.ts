@@ -1,23 +1,39 @@
 /**
  * API Service
- * Backend API 호출을 담당하는 서비스
+ * Handles all backend API communications for life statistics
+ *
+ * @module services/api
  */
 
 import { Birthdate, LifeStats } from '@/types';
+import { API_BASE_URL, API_ENDPOINTS } from '@/constants';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8050';
-
+/**
+ * Life statistics API service
+ * Provides methods for health checks and statistics calculations
+ */
 export const apiService = {
+  /**
+   * Performs a health check on the backend API
+   * @returns Promise resolving to health status
+   * @throws Error if API is unreachable or unhealthy
+   */
   async healthCheck(): Promise<{ status: string }> {
-    const response = await fetch(`${API_URL}/health`);
+    const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.HEALTH}`);
     if (!response.ok) {
       throw new Error('API health check failed');
     }
     return response.json();
   },
 
+  /**
+   * Calculates life statistics based on birthdate
+   * @param birthdate - User's birthdate information
+   * @returns Promise resolving to calculated life statistics
+   * @throws Error if calculation fails or invalid data provided
+   */
   async calculateStats(birthdate: Birthdate): Promise<LifeStats> {
-    const response = await fetch(`${API_URL}/api/v1/stats/calculate`, {
+    const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.CALCULATE_STATS}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

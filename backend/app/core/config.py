@@ -20,10 +20,14 @@ class Settings(BaseSettings):
     # Security
     SECRET_KEY: str = "your-secret-key-change-in-production"
 
+    # OpenAI
+    OPENAI_API_KEY: str = ""
+
     # CORS
     CORS_ORIGINS: List[str] = [
         "http://localhost:3050",
         "http://127.0.0.1:3050",
+        "https://yourlife.alldatabox.com",
     ]
 
     class Config:

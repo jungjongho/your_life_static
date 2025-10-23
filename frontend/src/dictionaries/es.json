@@ -1,0 +1,106 @@
+{
+  "metadata": {
+    "title": "Nuestro Aniversario - Calculadora de Aniversario de Pareja",
+    "description": "Ingrese su fecha especial y descubra el tiempo compartido y próximos hitos",
+    "keywords": "aniversario de pareja, 100 días, 200 días, 1000 días, calculadora de aniversario, d-day"
+  },
+  "hero": {
+    "title": "Nuestro Aniversario",
+    "subtitle": "Descubra el Tiempo Juntos y Próximos Días Especiales"
+  },
+  "form": {
+    "title": "Ingrese Su Fecha Especial",
+    "year": "Año",
+    "month": "Mes",
+    "day": "Día",
+    "calculateButton": "Ver Aniversario",
+    "calculating": "Calculando...",
+    "privacyNote": "🔒 Su información no se guarda"
+  },
+  "stats": {
+    "title": "Estadísticas de Nuestro Aniversario",
+    "daysLived": "Días Juntos",
+    "hoursLived": "Horas Juntas",
+    "minutesLived": "Minutos Juntos",
+    "secondsLived": "Segundos Juntos",
+    "heartbeats": "Latidos del Corazón",
+    "breaths": "Respiraciones Tomadas",
+    "sleepHours": "Horas de Sueño Juntos",
+    "mealsEaten": "Comidas Juntos",
+    "daysUntilBirthday": "Hasta Aniversario de 1 Año",
+    "nextMilestone": "Días Hasta Próximo Hito de 10,000 Días",
+    "milestone100": "Hasta 100 Días",
+    "milestone200": "Hasta 200 Días",
+    "milestone500": "Hasta 500 Días",
+    "milestone1000": "Hasta 1000 Días",
+    "milestone5years": "Hasta 5 Años",
+    "downloadButton": "Descargar como Imagen",
+    "shareButton": "Compartir URL",
+    "resetButton": "Calcular de Nuevo"
+  },
+  "viewCounter": {
+    "totalViews": "Visitas Totales",
+    "totalCalculations": "Cálculos"
+  },
+  "toast": {
+    "enterAllFields": "Por favor ingrese la fecha completa.",
+    "invalidDate": "Por favor ingrese una fecha válida.",
+    "imageDownloaded": "¡Imagen descargada exitosamente!",
+    "imageDownloadFailed": "Error al descargar imagen.",
+    "urlCopied": "¡URL copiada al portapapeles!",
+    "urlCopyFailed": "Error al copiar URL."
+  },
+  "footer": {
+    "copyright": "© 2025 Nuestro Aniversario. Solo para fines de referencia y entretenimiento."
+  },
+  "compatibility": {
+    "metadata": {
+      "title": "Compatibilidad de Pareja - Predicción de Fortuna Saju",
+      "description": "Verifique su compatibilidad según las fechas de nacimiento",
+      "keywords": "saju, compatibilidad, pareja, zodíaco, predicción de fortuna"
+    },
+    "hero": {
+      "title": "Compatibilidad de Pareja",
+      "subtitle": "Descubra su compatibilidad a través de Saju"
+    },
+    "form": {
+      "person1Title": "Primera Persona",
+      "person2Title": "Segunda Persona",
+      "year": "Año",
+      "month": "Mes",
+      "day": "Día",
+      "hour": "Hora (Opcional)",
+      "hourPlaceholder": "Hora",
+      "gender": "Género (Opcional)",
+      "genderMale": "Masculino",
+      "genderFemale": "Femenino",
+      "name": "Nombre (Opcional)",
+      "namePlaceholder": "Apodo",
+      "analyzeButton": "Analizar",
+      "analyzing": "Analizando...",
+      "privacyNote": "🔒 Su información no se guarda"
+    },
+    "result": {
+      "title": "Análisis de Compatibilidad",
+      "score": "Puntuación de Compatibilidad",
+      "summary": "Resumen",
+      "strengths": "Fortalezas",
+      "cautions": "Precauciones",
+      "elementsAnalysis": "Análisis de Cinco Elementos",
+      "zodiacCompatibility": "Compatibilidad del Zodíaco",
+      "advice": "Consejo",
+      "downloadButton": "Descargar como Imagen",
+      "shareButton": "Compartir URL",
+      "resetButton": "Analizar de Nuevo"
+    },
+    "toast": {
+      "enterAllFields": "Por favor ingrese todos los campos de fecha de nacimiento.",
+      "invalidDate": "Por favor ingrese una fecha válida.",
+      "analysisFailed": "Análisis fallido. Por favor intente de nuevo.",
+      "imageDownloaded": "¡Imagen descargada exitosamente!",
+      "imageDownloadFailed": "Error al descargar imagen.",
+      "urlCopied": "¡URL copiada al portapapeles!",
+      "urlCopyFailed": "Error al copiar URL."
+    }
+  }
+}

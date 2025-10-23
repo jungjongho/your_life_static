@@ -1,0 +1,106 @@
+{
+  "metadata": {
+    "title": "Our Anniversary - Couple Anniversary Calculator",
+    "description": "Enter your special date and discover time spent together and upcoming milestones",
+    "keywords": "couple anniversary, 100 days, 200 days, 1000 days, anniversary calculator, d-day"
+  },
+  "hero": {
+    "title": "Our Anniversary",
+    "subtitle": "Discover Time Together and Upcoming Special Days"
+  },
+  "form": {
+    "title": "Enter Your Special Date",
+    "year": "Year",
+    "month": "Month",
+    "day": "Day",
+    "calculateButton": "View Anniversary",
+    "calculating": "Calculating...",
+    "privacyNote": "🔒 Your information is not saved"
+  },
+  "stats": {
+    "title": "Our Anniversary Statistics",
+    "daysLived": "Days Together",
+    "hoursLived": "Hours Together",
+    "minutesLived": "Minutes Together",
+    "secondsLived": "Seconds Together",
+    "heartbeats": "Heart Beats",
+    "breaths": "Breaths Taken",
+    "sleepHours": "Hours of Sleep Together",
+    "mealsEaten": "Meals Together",
+    "daysUntilBirthday": "Until 1 Year Anniversary",
+    "nextMilestone": "Days Until Next 10,000-Day Milestone",
+    "milestone100": "Until 100 Days",
+    "milestone200": "Until 200 Days",
+    "milestone500": "Until 500 Days",
+    "milestone1000": "Until 1000 Days",
+    "milestone5years": "Until 5 Years",
+    "downloadButton": "Download as Image",
+    "shareButton": "Share URL",
+    "resetButton": "Calculate Again"
+  },
+  "viewCounter": {
+    "totalViews": "Total Visits",
+    "totalCalculations": "Calculations"
+  },
+  "toast": {
+    "enterAllFields": "Please enter the complete date.",
+    "invalidDate": "Please enter a valid date.",
+    "imageDownloaded": "Image downloaded successfully!",
+    "imageDownloadFailed": "Failed to download image.",
+    "urlCopied": "URL copied to clipboard!",
+    "urlCopyFailed": "Failed to copy URL."
+  },
+  "footer": {
+    "copyright": "© 2025 Our Anniversary. For reference and entertainment purposes only."
+  },
+  "compatibility": {
+    "metadata": {
+      "title": "Couple Compatibility - Saju Fortune Telling",
+      "description": "Check your compatibility based on birth dates",
+      "keywords": "saju, compatibility, couple, zodiac, fortune telling"
+    },
+    "hero": {
+      "title": "Couple Compatibility",
+      "subtitle": "Discover your compatibility through Saju"
+    },
+    "form": {
+      "person1Title": "First Person",
+      "person2Title": "Second Person",
+      "year": "Year",
+      "month": "Month",
+      "day": "Day",
+      "hour": "Hour (Optional)",
+      "hourPlaceholder": "Hour",
+      "gender": "Gender (Optional)",
+      "genderMale": "Male",
+      "genderFemale": "Female",
+      "name": "Name (Optional)",
+      "namePlaceholder": "Nickname",
+      "analyzeButton": "Analyze",
+      "analyzing": "Analyzing...",
+      "privacyNote": "🔒 Your information is not saved"
+    },
+    "result": {
+      "title": "Compatibility Analysis",
+      "score": "Compatibility Score",
+      "summary": "Summary",
+      "strengths": "Strengths",
+      "cautions": "Cautions",
+      "elementsAnalysis": "Five Elements Analysis",
+      "zodiacCompatibility": "Zodiac Compatibility",
+      "advice": "Advice",
+      "downloadButton": "Download as Image",
+      "shareButton": "Share URL",
+      "resetButton": "Analyze Again"
+    },
+    "toast": {
+      "enterAllFields": "Please enter all birth date fields.",
+      "invalidDate": "Please enter a valid date.",
+      "analysisFailed": "Analysis failed. Please try again.",
+      "imageDownloaded": "Image downloaded successfully!",
+      "imageDownloadFailed": "Failed to download image.",
+      "urlCopied": "URL copied to clipboard!",
+      "urlCopyFailed": "Failed to copy URL."
+    }
+  }
+}

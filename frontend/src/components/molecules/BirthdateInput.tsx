@@ -1,11 +1,12 @@
 /**
  * BirthdateInput Molecule Component
- * Combines year, month, day number inputs
+ * Combines year, month, day number inputs for special date entry
  */
 'use client';
 
 import NumberInput from '../atoms/NumberInput';
 import { MIN_BIRTH_YEAR } from '@/constants';
+import { useDictionary } from '@/contexts/DictionaryContext';
 
 interface BirthdateInputProps {
   year: number;
@@ -24,13 +25,14 @@ export default function BirthdateInput({
   onMonthChange,
   onDayChange,
 }: BirthdateInputProps) {
+  const dict = useDictionary();
   const currentYear = new Date().getFullYear();
 
   return (
     <div className="space-y-4">
       <div className="text-center mb-6">
-        <h2 className="text-2xl font-bold text-gray-800 mb-2">생년월일을 입력하세요</h2>
-        <p className="text-gray-600">당신의 인생을 숫자로 확인해보세요</p>
+        <h2 className="text-2xl font-bold text-gray-800 mb-2">{dict.form.title}</h2>
+        <p className="text-gray-600">{dict.hero.subtitle}</p>
       </div>
 
       <div className="grid grid-cols-3 gap-4">
@@ -40,7 +42,7 @@ export default function BirthdateInput({
           placeholder="YYYY"
           min={MIN_BIRTH_YEAR}
           max={currentYear}
-          label="년"
+          label={dict.form.year}
         />
         <NumberInput
           value={month}
@@ -48,7 +50,7 @@ export default function BirthdateInput({
           placeholder="MM"
           min={1}
           max={12}
-          label="월"
+          label={dict.form.month}
         />
         <NumberInput
           value={day}
@@ -56,12 +58,12 @@ export default function BirthdateInput({
           placeholder="DD"
           min={1}
           max={31}
-          label="일"
+          label={dict.form.day}
         />
       </div>
 
       <div className="text-center text-xs text-gray-500 mt-2">
-        예시: 1990년 5월 15일
+        {dict.form.year === '년' ? '예시: 2024년 1월 1일' : 'Example: January 1, 2024'}
       </div>
     </div>
   );
